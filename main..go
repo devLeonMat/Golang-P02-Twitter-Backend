@@ -1,4 +1,4 @@
-package Golang_P02_Twitter_Backend
+package main
 
 import (
 	"github.com/leonmatias2015/Golang-P02-Twitter-Backend/bd"
