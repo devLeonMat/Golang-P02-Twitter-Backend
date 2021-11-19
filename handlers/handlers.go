@@ -9,12 +9,15 @@ import (
 )
 
 // Managers /* Managers  set port, handler and put to hear*/
-func Managers()  {
+func Managers() {
 	router := mux.NewRouter()
-		PORT := os.Getenv("PORT")
-		if PORT == "" {
-			PORT = "8080"
-		}
-		handler := cors.AllowAll().Handler(router)
-		log.Fatal(http.ListenAndServe(":"+PORT, handler))
+
+	router.HandleFunc("/registry", middlew.CheckConnection(routers.registry)).Methods("POST")
+
+	PORT := os.Getenv("PORT")
+	if PORT == "" {
+		PORT = "8080"
+	}
+	handler := cors.AllowAll().Handler(router)
+	log.Fatal(http.ListenAndServe(":"+PORT, handler))
 }
