@@ -9,11 +9,11 @@ import (
 )
 
 /*MongoCN es el objeto de conexión a la BD */
-var MongoCN = ConectDB()
+var MongoCN = ConnectDB()
 var clientOptions = options.Client().ApplyURI("mongodb+srv://rleon2020:1PppUaDYqYUEHh4Q@cluster0.e0fnv.mongodb.net/twitter-clone?retryWrites=true&w=majority")
 
-/*ConectDB for connect to db */
-func ConectDB() *mongo.Client {
+/*ConnectDB for connect to db */
+func ConnectDB() *mongo.Client {
 	client, err := mongo.Connect(context.TODO(), clientOptions)
 	if err != nil {
 		log.Fatal(err.Error())
