@@ -3,8 +3,8 @@ package routers
 import (
 	"encoding/json"
 	"github.com/leonmatias2015/Golang-P02-Twitter-Backend/bd"
-	"github.com/leonmatias2015/Golang-P02-Twitter-Backend/models"
 	"github.com/leonmatias2015/Golang-P02-Twitter-Backend/jwt"
+	"github.com/leonmatias2015/Golang-P02-Twitter-Backend/models"
 	"net/http"
 	"time"
 )

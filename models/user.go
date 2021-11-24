@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-/** user model   */
+// User model   */
 type User struct {
 	ID        primitive.ObjectID `bson:"_id,omitempty" json:"id"`
 	Name      string             `bson:"name" json:"name,omitempty"`

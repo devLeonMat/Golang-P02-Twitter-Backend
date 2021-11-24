@@ -10,7 +10,7 @@ import (
 	"os"
 )
 
-// Managers /* Managers  set port, handler and put to hear*/
+// Managers set port, handler and put to hear*/
 func Managers() {
 	router := mux.NewRouter()
 
