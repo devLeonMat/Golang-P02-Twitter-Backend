@@ -37,8 +37,8 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	resp:=models.loginResponse{
-		Token: jwtKey
+	resp:=models.LoginResponse{
+		Token: jwtKey,
 	}
 
 	w.Header().Set("Content-Type", "application/json")
