@@ -2,10 +2,9 @@ package bd
 
 import (
 	"context"
-	"log"
-
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"log"
 )
 
 /*MongoCN es el objeto de conexión a la BD */
