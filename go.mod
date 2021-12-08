@@ -1,13 +1,13 @@
 module github.com/leonmatias2015/Golang-P02-Twitter-Backend
 
-go 1.13
+go 1.17
 
 require (
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/gorilla/mux v1.8.0
 	github.com/rs/cors v1.8.0
 	go.mongodb.org/mongo-driver v1.7.3
-	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
+	golang.org/x/crypto v0.0.0-20200302210943-78000ba7a073
 )
 
 require (
