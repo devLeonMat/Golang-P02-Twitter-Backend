@@ -1,6 +1,6 @@
 module github.com/leonmatias2015/Golang-P02-Twitter-Backend
 
-go 1.17
+go 1.13
 
 require (
 	github.com/golang-jwt/jwt v3.2.2+incompatible
